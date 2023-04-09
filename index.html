@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Randika | BMI Calculator</title>
+  </head>
+  <body>
+    <main class="flex-col">
+      <!-- start container -->
+      <section class="container">
+        <!-- start calculator title -->
+        <section class="title">
+          <div class="main-title">
+            <h1>Check Your BMI</h1>
+          </div>
+          <div class="sub-title">
+            <h3>
+              Enter your weight and height below to check your BMI results
+            </h3>
+          </div>
+        </section>
+        <!-- end calculator title -->
+
+        <!-- start field input for calculator -->
+        <section class="container-item flex-col">
+          <!-- start calculator form -->
+          <form id="bmiform">
+            <div class="item flex-col">
+              <label for="weight">Put your weight in here (KG)</label>
+              <input id="weight" type="number" name="weight" placeholder="60" />
+            </div>
+            <div class="item flex-col">
+              <label for="height">And your height in here (CM)</label>
+              <input
+                id="height"
+                type="number"
+                name="height"
+                placeholder="167"
+              />
+            </div>
+            <!-- create button for generate results  -->
+            <button type="submit" id="button">Calculate BMI</button>
+          </form>
+          <!-- end calculator form -->
+
+          <!-- start calculator results -->
+          <section id="results">
+            <p>
+              Your BMI is "<strong>Your BMI</strong>" which means You are
+              "<strong>Your Category</strong>"
+            </p>
+          </section>
+          <!-- end calculator results -->
+        </section>
+        <!-- end field input for calculator -->
+      </section>
+      <!-- end container -->
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
